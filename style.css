@@ -49,7 +49,7 @@ header div {
 }
 
 header ul {
-    width: 30%;
+    width: 40%;
     display: flex;
     list-style: none;
     padding: 0px;
@@ -264,6 +264,10 @@ header button:active {
         width: 600px;
     }
 
+    header ul {
+        width: 50%;
+    }
+
     #sec1 {
         width: 700px;
     }
@@ -308,6 +312,10 @@ header button:active {
 @media (min-width: 500px) and (max-width: 700px) {
     header {
         width: 500px;
+    }
+
+    #ab {
+        display: none;
     }
 
     #sec1 {
@@ -555,9 +563,9 @@ main #flex div:hover {
 
 #m3 h2 {
     font-size: 50px;
-     font-family: cursive; 
+    font-family: cursive;
     /* text-decoration: underline;
-    text-decoration-style: dotted; */ 
+    text-decoration-style: dotted; */
 }
 
 #m3 p {
@@ -582,9 +590,8 @@ main #flex div:hover {
 
 #m3 div {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 100px;
 }
 
 #m3 div a {
@@ -602,6 +609,9 @@ main #flex div:hover {
 }
 
 @media (min-width: 1260px) {
+    #m3 div {
+        width: 70%;
+    }
 
     #m3 h2 {
         text-align: center;
@@ -612,6 +622,12 @@ main #flex div:hover {
     }
 }
 
+@media (min-width: 800px) and (max-width: 1260px) {
+    #m3 div {
+        width: 90%;
+    }
+}
+
 @media (max-width: 800px) {
     #m3 p a {
         font-size: 35px;
@@ -619,6 +635,9 @@ main #flex div:hover {
 }
 
 @media (min-width: 500px) and (max-width: 700px) {
+    #m3 div {
+        width: 80%;
+    }
 
     #m3 p {
         margin: 10px 0px;
@@ -630,6 +649,7 @@ main #flex div:hover {
 
     #m3 div {
         margin-top: 40px;
+        width: 500px;
     }
 
     #m3 div a img {
@@ -639,6 +659,10 @@ main #flex div:hover {
 }
 
 @media (min-width: 400px) and (max-width: 500px) {
+    #m3 div {
+        width: 100%;
+        margin-top: 40px;
+    }
 
     #m3 h2 {
         margin: 10px 0px;
@@ -656,11 +680,6 @@ main #flex div:hover {
         font-size: 30px;
     }
 
-    #m3 div {
-        gap: 70px;
-        margin-top: 40px;
-    }
-
     #m3 div a img {
         height: 70px;
         width: 70px;
@@ -668,6 +687,10 @@ main #flex div:hover {
 }
 
 @media (max-width: 400px) {
+    #m3 div {
+        width: 100%;
+        margin-top: 40px;
+    }
 
     #m3 p {
         margin: 20px 0px;
@@ -677,10 +700,6 @@ main #flex div:hover {
         font-size: 20px;
     }
 
-    #m3 div {
-        gap: 50px;
-        margin-top: 40px;
-    }
 
     #m3 div a img {
         height: 50px;
