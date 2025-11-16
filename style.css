@@ -1,3 +1,18 @@
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: none;
+}
+
+/* For IE, Edge */
+* {
+    -ms-overflow-style: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -719,6 +734,9 @@ main #flex div:hover {
 }
 
 #m2 .grid {
+    height: 800px;
+    overflow:scroll;
+    padding: 10px;
     width: 90%;
     display: grid;
     gap: 40px;
@@ -811,6 +829,8 @@ main #flex div:hover {
 
     #m2 .grid {
         grid-template-columns: 1fr;
+    height: 500px;
+
     }
 
     #m2 .grid a {
